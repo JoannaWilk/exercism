@@ -1,2 +1,2 @@
-# exercism_python
+# exercism
 Solutions for tasks from exercism.io
