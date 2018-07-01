@@ -14,7 +14,7 @@ def verify(isbn):
     factors.reverse()
 
     try:
-        dot_product = list(accumulate([int(a) * b for a, b in zip(isbn, factors)]))[-1]
-        return True if dot_product%11 == 0 else False
+        dot_product = list(accumulate((int(a) * b for a, b in zip(isbn, factors))))[-1]
+        return dot_product%11 == 0
     except:
         return False
